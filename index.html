@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de Actividades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>Agenda de Actividades</h1>
+
+  <div class="filters">
+    <input type="search" id="search" placeholder="Buscar evento..." />
+    <select id="category"></select>
+    <select id="locality"></select>
+    <button id="today">Hoy</button>
+    <button id="reset">Limpiar</button>
+  </div>
+</header>
+
+<main>
+  <p id="count"></p>
+  <div id="events" class="grid"></div>
+  <p id="empty" class="empty" hidden>No hay eventos para mostrar</p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
